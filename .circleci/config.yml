@@ -29,8 +29,7 @@ jobs:
 
       - run:
           command: |
-            curl -sSL https://www.sourceclear.com/install | bash
-            echo "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZWFtSWQiOiI5NzU2Iiwic2NvcGUiOltdLCJpZCI6MTU2NTAsImV4cCI6MTUxOTE5MzIyMCwiYXV0aG9yaXRpZXMiOiJBR0VOVCIsIm9yZ0lkIjoiMTMwNiIsImp0aSI6IjMzYTA4MjllLWQ0MTgtNDIyYi04MGI2LWRmZjVkNjFkMjk1MSIsImNsaWVudF9pZCI6IiJ9.FVteCM7SlpjkgNddY1PFrlVDt_-pvQA5OkqMEhE6fWITuZANJbNuSko40AciTWJCdFUwWl7-zjZ8KiR9oWLaoDkB-AbbsxPuMXdj07dsSqQnidVEiRHJWUgSOozkl8qiPuoYD4xsFtr0YNHMQmYhYwINsbk_ETiiRLL60mL7Ydo" | srcclr activate
+            curl -sSL https://download.sourceclear.com/ci.sh | bash
             srcclr scan
       
       - store_test_results:
